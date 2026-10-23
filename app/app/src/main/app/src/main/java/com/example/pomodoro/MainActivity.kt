@@ -77,7 +77,7 @@ fun PomodoroScreen() {
             modifier = Modifier.background(Color(0xFF1E1E1E), RoundedCornerShape(30.dp)).padding(6.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            TimerMode.entries.forEach { mode ->
+            TimerMode.values().forEach { mode ->
                 val selected = mode == currentMode
                 Button(
                     onClick = {
